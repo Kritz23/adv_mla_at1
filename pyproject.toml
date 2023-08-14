@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "adv-mla-at1"
+version = "0.1.0"
+description = ""
+authors = ["Kritika"]
+readme = "README.md"
+packages = [{include = "adv_mla_at1"}]
+
+[tool.poetry.dependencies]
+python = "3.9.13"
+pandas = "2.0.1"
+scikit-learn = "1.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
