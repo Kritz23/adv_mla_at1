@@ -1,7 +1,7 @@
 adv_mla_at1
 ==============================
 
-Project folder f for AT1 Adv MLA
+Project folder for AT1 Adv MLA
 
 Project Organization
 ------------
