@@ -63,11 +63,10 @@ Scalers, one hot encoders and trained models are saved in [models](models). The 
 
 ## Prediction
 If you want to straight away make predictions on the test set(or any other set), in your terminal go to the project folder and follow these steps: <br>
-1. Activate your venv with poetry 
-    `poetry shell`
-2. Run the python script to make predictions with the best model
-    `python src/models/predict_model.py`
+1. Activate your venv with poetry <br>
+    poetry shell
+2. Run the python script to make predictions with the best model <br>
+    python src/models/predict_model.py
 
 Note: You can change the output file name in the [prediction script](src/models/predict_model.py) and you will have a csv file in [submission_files](submission_files).
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
