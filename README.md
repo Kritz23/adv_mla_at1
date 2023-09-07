@@ -1,7 +1,10 @@
 adv_mla_at1
 ==============================
+Kaggle user - [Kritz_23](https://www.kaggle.com/kritz23)
 
-Project folder for AT1 Adv MLA
+This is a repository for AT1 Adv MLA which is also a [Kaggle Competition](https://www.kaggle.com/competitions/advmla-2023-spring/overview) <br>
+I have performed various [experiments](notebooks) on the given dataset in order to achieve the best AUCROC score on validation and test sets. The best score was pulled off in Week 3 with [Random Forest + SMOTE](notebooks/dhawale_kritika-24587661-week3_B_rand_forest.ipynb). 
+
 
 Project Organization
 ------------
@@ -53,5 +56,18 @@ Project Organization
 
 
 --------
+## Saved Models
+Scalers, one hot encoders and trained models are saved in [models](models). The best model which has the highest validation and test AUCROC score is saved as [nba_draft_prediction.joblib](models/best_model/nba_draft_prediction.joblib). 
+
+---------
+
+## Prediction
+If you want to straight away make predictions on the test set(or any other set), in your terminal go to the project folder and follow these steps: <br>
+1. Activate your venv with poetry 
+    `poetry shell`
+2. Run the python script to make predictions with the best model
+    `python src/models/predict_model.py`
+
+Note: You can change the output file name in the [prediction script](src/models/predict_model.py) and you will have a csv file in [submission_files](submission_files).
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
